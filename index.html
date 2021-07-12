@@ -1,0 +1,66 @@
+<html>
+<style>
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url('https://www.mercedes-benz.com/en/vehicles/passenger-cars/_jcr_content/root/grid_copy/grid-par/griditem_copy/image/MQ6-8-image-20200129142634/00-mercedes-benz-passenger-cars-art-calender-2019-2560x1440.jpeg');
+  width: 12000px;
+  height: 200000px;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+.content {
+  position: absolute;
+  top: 50%
+  left: 50%;
+  right: 50%;
+  z-index: 2;
+  width: 20%;
+  content: center;
+  }
+
+  </style>
+<body>
+<form action ="http://localhost:9000/login" method="post">
+<div class="background-image">  </div>
+<div class="content">
+<header>
+<h1 style="font-family:verdana;font-size:200%;content-align:center;color:white;"> CAR PERFORMANCE PREDICTION </h1>
+<h2 style="font-family:courier;font-size:90%;content-align:center;color:white;"> ENTER THE BELOW DATA TO FIND THE CAR'S PERFORMANCE </h2>
+<br>
+<p style="text-align:center;color:white;"> Enter no:of cylinders </p>
+<p style="text-align:center;color:white;"><input type= "text" name="cyl"/></p>
+<br>
+<p style="text-align:center;color:white;"> Enter the Displacement</p>
+<p style="text-align:center;color:white;"> <input type= "text" name="dis"/></p>
+<br>
+<p style="text-align:center;color:white;"> Enter Horsepower</p>
+<p style="text-align:center;color:white;"> <input type= "text" name="hp"/></p>
+<br>
+<p style="text-align:center;color:white;"> Enter Weight</p>
+<p style="text-align:center;color:white;"><input type= "text" name="w"/></p>
+<br>
+<p style="text-align:center;color:white;"> Enter Acceleration</p>
+<p style="text-align:center;color:white;"> <input type= "text" name="a"/></p>
+<br>
+<p style="text-align:center;color:white;"> Enter Model Year</p>
+<p style="text-align:center;color:white;"> <input type= "text" name="my"/></p>
+<br>
+<p style="text-align:center;color:white;"> Enter Origin</p>
+<p style="text-align:center;color:white;"> <input type= "text" name="ori"/></p>
+<br>
+<p style="text-align:center;color:white;"> <input type="submit" value ="check the performance"/></p>
+
+</form>
+<b style="text-align:center;color:white;"> {{label}} </b>
+
+
+</div>
+</body>
+</html>
